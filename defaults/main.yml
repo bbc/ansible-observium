@@ -43,6 +43,7 @@ observium_monitor_libvirt_vms: false  #Define if desired to monitor LibVirt VM's
 pri_domain_name: 'vagrant.local'
 observium_snmp_community_list:   # define a list of default communities to try when adding devices
   - '"public"'    # requires that the quotes are inside single quotation marks to keep the quotes in the config.php
+observium_http_proxy: ''
 
 # If we wish to use the paid for version this will allow us to use
 observium_commercial: false                                                                     # Do we wish to use opensource version

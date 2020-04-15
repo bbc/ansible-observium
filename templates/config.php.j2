@@ -26,4 +26,7 @@ $config['email']['default']        = "{{ observium_admin_account_info.email_to |
 $config['email']['from']           = "{{ observium_admin_account_info.email | default('root@localhost') }}";
 $config['email']['default_only']   = {{ observium_admin_account_info.email_default_only | default('TRUE') }};
 
+// Configure an HTTP proxy
+$config['http_proxy'] = "{{ observium_http_proxy }}";
+
 // End config.php
