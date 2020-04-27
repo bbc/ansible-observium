@@ -17,4 +17,8 @@
     dest: "{{ observium_base_dir }}"
     username: "{{ observium_commercial_svn_user }}"
     password: "{{ observium_commercial_svn_password }}"
-    update: no
+    update: "{{ observium_commercial_update | ternary('yes', 'no') }}"
+
+- name: Re-run discovery after update
+  command: "{{ observium_base_dir }}/discovery.php -u"
+  when: observium_commercial_update | bool
