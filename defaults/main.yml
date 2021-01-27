@@ -30,6 +30,7 @@ observium_debian_pre_reqs:
   - php7.2-mysql
   - php7.2-mysqli
   - python-mysqldb
+  - python3-pymysql
   - rrdtool
   - snmp
   - subversion
