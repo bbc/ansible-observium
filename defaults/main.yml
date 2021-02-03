@@ -13,29 +13,6 @@ observium_db_info:
   host: '127.0.0.1'
   password: 'observium'
   user: 'observium'
-observium_debian_pre_reqs:
-  - apache2
-  - fping
-  - graphviz
-  - imagemagick
-  - ipmitool
-  - libapache2-mod-php7.2
-  - mtr-tiny
-  - mysql-server
-  - mysql-client
-  - php-pear
-  - php7.2-cli
-  - php7.2-gd
-  - php7.2-json
-  - php7.2-mysql
-  - php7.2-mysqli
-  - python-mysqldb
-  - python3-pymysql
-  - rrdtool
-  - snmp
-  - subversion
-  - whois
-  - snmp-mibs-downloader
 
 observium_dl_dir: '/opt'
 observium_dl_package: 'observium-community-latest.tar.gz'

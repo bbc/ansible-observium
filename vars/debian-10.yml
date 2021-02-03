@@ -1,0 +1,22 @@
+observium_debian_pre_reqs:
+  - apache2
+  - fping
+  - graphviz
+  - imagemagick
+  - ipmitool
+  - libapache2-mod-php7.3
+  - mtr-tiny
+  - mysql-server
+  - mysql-client
+  - php-pear
+  - php7.3-cli
+  - php7.3-gd
+  - php7.3-json
+  - php7.3-mysql
+  - php7.3-mysqli
+  - python-mysqldb
+  - rrdtool
+  - snmp
+  - subversion
+  - whois
+  - snmp-mibs-downloader
