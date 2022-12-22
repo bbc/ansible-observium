@@ -60,6 +60,6 @@
       minute: "47"
 
     - name: "Run database backup daily, keeping 7 days worth"
-      job: "mysqldump {{ observium_db_info.db }} > {{ observium_base_dir }}/backups/observium-backup-$(date '+%Y-%m-%d_%H:%M:%S').sql && find {{ observium_base_dir }}/backups/ -type f -name 'observium-backup-*.sql' -mtime +7 -delete 2>&1"
+      job: "mysqldump {{ observium_db_info.db }} > \"{{ observium_base_dir }}/backups/observium-backup-$(date '+\\%Y-\\%m-\\%d_\\%H:\\%M:\\%S').sql\" && find {{ observium_base_dir }}/backups/ -type f -name \"observium-backup-*.sql\" -mtime +7 -delete 2>&1"
       hour: "5"
       minute: "55"
