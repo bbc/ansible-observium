@@ -1,18 +1,18 @@
 ---
 # tasks file for ansible-observium
-- include: set_facts.yml
+- include_tasks: set_facts.yml
 
-- include: debian.yml
+- include_tasks: debian.yml
   when: ansible_os_family == "Debian"
 
-- include: install.yml
+- include_tasks: install.yml
   when: not observium_commercial
 
-- include: install-commercial.yml
+- include_tasks: install-commercial.yml
   when: observium_commercial
 
-- include: config.yml
+- include_tasks: config.yml
 
-- include: users.yml
+- include_tasks: users.yml
 
-- include: cron.yml
+- include_tasks: cron.yml
